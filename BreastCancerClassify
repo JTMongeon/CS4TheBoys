@@ -116,7 +116,18 @@ public class BreastCancerClassify {
 	 //DONE BY AJ
 	public static int classify(int[][] trainData, int[] kClosestIndexes)
 	{
-		return 0;
+		int good=0, bad=0;
+		for(int[] array : trainData) {
+			for(int i=1; i<array.length-1; i++)
+				if(array[i] == 2)
+					good++;
+				else
+					bad++;
+		}
+		
+		if(bad > good)
+			return MALIGNANT;
+		return BENIGN;
 	}
 	
 	/**
