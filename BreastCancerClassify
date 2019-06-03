@@ -111,6 +111,7 @@ public class BreastCancerClassify {
 	 * 
 	 * Return one of the global integer constants defined in this function. 
 	 */
+	 //DONE BY AJ
 	public static int classify(int[][] trainData, int[] kClosestIndexes)
 	{
 		return 0;
