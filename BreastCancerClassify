@@ -44,8 +44,10 @@ public class BreastCancerClassify {
 	 * [22344, 2, 8, 3, BENIGN]
 	 * 
 	 * distance = sqrt((6-2)^2 + (4-8)^2 + (4-3)^2)
+	 * 
 	 */
-	public static double calculateDistance(int[] first, int[] second)
+	 //DONE BY AJ
+	public static double calculateDistance(int[] first, int[] second) 
 	{
 		return 0; //Quiets compiler. Replace this. 
 	}
@@ -55,6 +57,7 @@ public class BreastCancerClassify {
 	 * to each training instance. The double[] returned should have the 
 	 * same number of instances as trainData. 
 	 */
+	 //DONE BY GABE
 	public static double[] getAllDistances(int[][] trainData, int[] testInstance)
 	{
 		double[] allDistances = null; //Change the initialization!
@@ -83,6 +86,7 @@ public class BreastCancerClassify {
 	 * (you can pick either!). Note that the solution described above isn't the most efficient one. 
 	 * Impress me even more by coming up with something better, and say why it's faster!
 	 */
+	 //DONE BY JT
 	public static int[] findKClosestEntries(double[] allDistances)
 	{
 		int[] kClosestIndexes = new int[K];
