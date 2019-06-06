@@ -165,7 +165,7 @@ public class BreastCancerClassify {
 	 * @return: int array of classifications (BENIGN or MALIGNANT)
 	 */
 	public static int[] kNearestNeighbors(int[][] trainData, int[][] testData){
-		int[] myResults = null; //Change this initialization to the right size!
+		int[] myResults = new int[testData.length]; //Change this initialization to the right size!
 
 		return myResults;
 	}
