@@ -165,7 +165,15 @@ public class BreastCancerClassify {
 	 * @return: int array of classifications (BENIGN or MALIGNANT)
 	 */
 	public static int[] kNearestNeighbors(int[][] trainData, int[][] testData){
-		int[] myResults = new int[testData.length]; //Change this initialization to the right size!
+		int[] myResults = new int[testData.length];//Change this initialization to the right size!
+		double[] distances;
+		int[] closest;
+				for(int r = 0;r<testData.length;r++) {
+					distances = getAllDistances(trainData,testData[r] );
+					closest= findKClosestEntries(distances);
+					myResults[r] = classify(trainData,closest);
+					
+				}
 
 		return myResults;
 	}
