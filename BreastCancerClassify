@@ -63,7 +63,12 @@ public class BreastCancerClassify {
 	 //DONE BY GABE
 	public static double[] getAllDistances(int[][] trainData, int[] testInstance)
 	{
-		double[] allDistances = null; //Change the initialization!
+		double[] allDistances = new double[trainData.length]; //Change the initialization!
+		int indDistances = 0;
+		for(int r = 0;r<trainData.length;r++) {
+				allDistances[indDistances] = calculateDistance(testInstance, trainData[r]);
+				indDistances++;
+		}
 		
 		return allDistances;
 	}
