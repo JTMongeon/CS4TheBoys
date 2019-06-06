@@ -97,7 +97,24 @@ public class BreastCancerClassify {
 	 //DONE BY JT
 	public static int[] findKClosestEntries(double[] allDistances)
 	{
+		//make copy of parameter to be able to modify
+		double[] cop = new double[allDistances.length];
+		for(int i=0; i<cop.length;i++) {
+			cop[i]=allDistances[i];
+		}
+		int leastIndx = 0;
 		int[] kClosestIndexes = new int[K];
+		for(int r =0; r< kClosestIndexes.length;r++) {
+			for(int i=1;i<cop.length;i++) {
+				if(cop[i]<cop[leastIndx]&&cop[i]>0) {
+					
+					leastIndx=i;
+				}
+			}
+			kClosestIndexes[r]=leastIndx;
+			cop[leastIndx]=0;
+			leastIndx=0;
+		}
 		
 		return kClosestIndexes;
 	}
