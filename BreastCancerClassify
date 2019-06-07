@@ -235,3 +235,30 @@ public class BreastCancerClassify {
 	}
 
 }
+/*
+What function would you like to test?
+Enter the number to test that function, or 'q' to quit
+1) calculateDistance
+2) getAllDistances
+3) run Grapher to plot all pairwise distances
+4) findKClosestEntries
+5) classify
+6) kNearestNeighbors
+>> 6
+
+Percent Accuracy: 94.37%
+Congratulations, you've implemented KNN correctly!
+------------------------------------------------------
+
+What function would you like to test?
+Enter the number to test that function, or 'q' to quit
+1) calculateDistance
+2) getAllDistances
+3) run Grapher to plot all pairwise distances
+4) findKClosestEntries
+5) classify
+6) kNearestNeighbors
+>> q
+
+
+*/
